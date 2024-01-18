@@ -3,8 +3,6 @@ const secretKey = "" + process.env.ACCESS_KEY;
 
 const signupController = require("./Signup");
 
-router.post("/register", signupController.Signup);
-
 module.exports = {
   Signup: signupController.Signup,
   // 로그인을 처리하는 함수입니다.

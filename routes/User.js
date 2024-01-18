@@ -1,6 +1,7 @@
 const express = require("express");
-//const router = express.Router();
 const userController = require("../controller/User");
+
+const router = express.Router();
 
 router.post("/register", userController.Signup);
 
@@ -11,7 +12,6 @@ const { UserController: controller } = require("../controller");
 const { Check } = require("../middleware/isAuth");
 
 // express의 Router 인스턴스를 생성합니다.
-const router = express.Router();
 
 router.post("/register", userController.Signup);
 // 회원가입 API
