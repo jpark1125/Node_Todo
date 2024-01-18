@@ -4,6 +4,6 @@
     "password": "1111",
     "database": "node_Todo",
     "host": "localhost",
-    "dialect": "mysql2"
+    "dialect": "mysql"
   }
 }

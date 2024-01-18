@@ -1,11 +1,12 @@
 const { createRefreshToken } = require("../utils/jwt");
 const secretKey = "" + process.env.ACCESS_KEY;
 
-const signupController = require("./controllers/Signup");
+const signupController = require("./Signup");
 
 router.post("/register", signupController.Signup);
 
 module.exports = {
+  Signup: signupController.Signup,
   // 로그인을 처리하는 함수입니다.
   Login: async (req, res) => {
     try {

@@ -12,7 +12,7 @@ const { Sequelize, QueryTypes } = require("sequelize");
 const basename = path.basename(__filename);
 
 // 환경 변수에서 NODE_ENV 값을 가져옵니다. 설정되어 있지 않다면 'development'를 기본값으로 사용합니다.
-const env = process.env.NODE_ENV || "development";
+const env = process.env.NODE_ENV || "nodetodo";
 
 // 설정 파일에서 해당 환경의 설정을 가져옵니다.
 const config = require(__dirname + "/../config/config.json")[env];
