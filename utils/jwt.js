@@ -1,9 +1,7 @@
 const jwt = require("jsonwebtoken");
 
-// 환경 변수를 사용하기 위해 dotenv 모듈을 가져옵니다.
 require("dotenv").config();
 
-// 환경 변수에서 JWT 암호화에 사용할 키를 가져옵니다.
 const { ACCESS_KEY, REFRESH_KEY } = process.env;
 
 module.exports = {

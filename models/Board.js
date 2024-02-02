@@ -1,31 +1,24 @@
 module.exports = (sequelize, DataTypes) => {
-  const Users = sequelize.define(
-    "Users",
+  const Board = sequelize.define(
+    "Board",
     {
       idx: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
       },
-      name: {
-        type: DataTypes.STRING(10),
+      title: {
+        type: DataTypes.STRING(200),
         allowNull: false,
       },
-      email: {
-        type: DataTypes.STRING(180),
+
+      content: {
+        type: DataTypes.STRING(200),
         allowNull: false,
       },
       id: {
-        type: DataTypes.STRING(11),
-        allowNull: false,
-      },
-      passwd: {
         type: DataTypes.STRING(100),
         allowNull: false,
-      },
-      refreshtoken: {
-        type: DataTypes.STRING(200),
-        allowNull: true,
       },
     },
     {
@@ -35,5 +28,5 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  return Users;
+  return Board;
 };
