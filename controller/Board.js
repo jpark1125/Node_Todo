@@ -10,7 +10,6 @@ module.exports = {
     try {
       // 요청 본문에서 필요한 정보를 추출
       let { title } = req.body;
-      //console.log(req.files);
       let { content } = req.body;
       let { xauth } = req.body;
 
@@ -20,7 +19,6 @@ module.exports = {
       const rows = await Board.create({
         title: title,
         content: content,
-        //image: image,
         id: decoded.id,
       });
 
